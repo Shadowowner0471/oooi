@@ -496,11 +496,12 @@ def welcome_rules(message):
     bot.reply_to(message, response)
     
 @bot.message_handler(commands=['video'])
-def welcome_rules(message):
+def welcome_video(message):
     user_name = message.from_user.first_name
-    response = f'''{user_name} 𝐇𝐞𝐫𝐞'𝐬 𝐓𝐡𝐞 𝐋𝐢𝐧𝐤 𝐎𝐟 𝐃𝐞𝐭𝐚𝐢𝐥𝐞𝐝 𝐕𝐞𝐝𝐢𝐨 𝐇𝐨𝐰 𝐓𝐨 𝐃𝐃𝐨𝐒 𝐅𝐫𝐨𝐦 :\nhttps://t.me/+GyFEB9f16KJkZjQ1'''
+    response = f"{user_name} 𝐇𝐞𝐫𝐞'𝐬 𝐓𝐡𝐞 𝐋𝐢𝐧𝐤 𝐎𝐟 𝐃𝐞𝐭𝐚𝐢𝐥𝐞𝐝 𝐕𝐢𝐝𝐞𝐨 𝐇𝐨𝐰 𝐓𝐨 𝐃𝐃𝐨𝐒 𝐅𝐫𝐨𝐦 :\nhttps://t.me/+GyFEB9f16KJkZjQ1"
     
     bot.reply_to(message, response)
+
 
 #bot.polling()
 while True:
